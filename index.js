@@ -83,6 +83,6 @@ app.get("/getMaxSpeed", authenticateToken, async (req, res) => {
     .json({ message: "User registered successfully", maxWpm: maxOfAllArray });
 });
 
-app.listen(port, () => {
-  console.log(`Server running on http://localhost:${port}`);
+app.listen("https://type-blitz-backend.vercel.app/", () => {
+  console.log(`Server running on https://type-blitz-backend.vercel.app/`);
 });
